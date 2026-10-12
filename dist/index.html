@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Cases — 3D WebGL Portfolio Hub</title>
+    <meta
+      name="description"
+      content="Interactive 3D WebGL Curved Portfolio Showcase with live Vercel deployments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-DYi2-mQX.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DqrHUbIw.css">
+  </head>
+  <body class="is-loading" data-view="featured">
+    <canvas
+      class="gl"
+      aria-label="Featured cases 3D carousel. Drag, scroll or use the arrow keys to browse."
+    ></canvas>
+
+    <section class="full" aria-label="All cases" aria-hidden="true">
+      <ul class="full__list"></ul>
+    </section>
+
+    <header class="chrome">
+      <a class="chrome__item chrome__tl" href="./">Selected Cases · 07 Live Projects</a>
+      <button type="button" class="chrome__item chrome__tc" id="view-toggle">
+        Index View
+      </button>
+      <a
+        class="chrome__item chrome__tr"
+        href="https://github.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Portfolio
+      </a>
+    </header>
+
+    <div class="hud-hint" aria-hidden="true">
+      <span>Drag or Scroll to Warp 3D Ribbon · Click any Card for Live App</span>
+    </div>
+
+    <div
+      class="case"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="case-title"
+      hidden
+    >
+      <div class="case__frame">
+        <video
+          class="case__video"
+          muted
+          loop
+          playsinline
+          preload="auto"
+        ></video>
+        <iframe
+          class="case__iframe"
+          title="Live project interactive preview"
+          hidden
+        ></iframe>
+      </div>
+
+      <div class="case__meta">
+        <span class="case__no"></span>
+        <h2 class="case__title" id="case-title"></h2>
+        <span class="case__category"></span>
+      </div>
+
+      <div class="case__actions">
+        <button type="button" class="case__mode-btn" id="toggle-live-iframe">
+          Switch to Interactive Live View
+        </button>
+        <a
+          class="case__live-link"
+          id="case-live-url"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Live Website ↗
+        </a>
+      </div>
+
+      <div class="case__nav">
+        <button type="button" class="case__prev" aria-label="Previous case">
+          Prev
+        </button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="case__next" aria-label="Next case">
+          Next
+        </button>
+      </div>
+      <button type="button" class="case__close">Close</button>
+    </div>
+
+    <div class="loader" aria-hidden="true">
+      <span class="loader__label">Selected Cases — 3D WebGL Hub</span>
+      <span class="loader__pct">0</span>
+    </div>
+
+  </body>
+</html>

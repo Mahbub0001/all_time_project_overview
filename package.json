@@ -1,0 +1,19 @@
+{
+  "name": "web_reel",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5174",
+    "build": "vite build",
+    "preview": "vite preview --port 4174"
+  },
+  "dependencies": {
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.175.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
+  }
+}
